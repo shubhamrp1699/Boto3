@@ -8,7 +8,7 @@ def get_snapshots_src():
     return response["Snapshots"]
 
 snap = get_snapshots_src()
-print(*snap, sep="/n")
+print(*snap, sep="\n")
 for snapshot in snapshots['Snapshots']:
     a= snapshot['StartTime']
     b=a.date()
