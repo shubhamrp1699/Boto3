@@ -2,9 +2,9 @@ import boto3
 import datetime
 client_src = boto3.client('ec2')
 client = boto3.client('ec2',region_name='ap-south-1')
-snapshots = client.describe_snapshots(OwnerIds=['617375357635'])
+snapshots = client.describe_snapshots(OwnerIds=['111111111'])
 def get_snapshots_src():
-    response = client_src.describe_snapshots(OwnerIds=['617375357635'])
+    response = client_src.describe_snapshots(OwnerIds=['1111111111'])
     return response["Snapshots"]
 
 snap = get_snapshots_src()
